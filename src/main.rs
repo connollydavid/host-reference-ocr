@@ -20,6 +20,12 @@ fn main() -> Result<(), Box<dyn Error>> {
     let path = std::env::args()
         .nth(1)
         .ok_or("usage: host-reference-ocr-helper <image>")?;
+    // The plugin records this into the attested skeleton so the recognition declares which engine
+    // produced it (host-reference plan/0050 finding 9).
+    if path == "--version" {
+        println!("{} {}", env!("CARGO_PKG_NAME"), env!("CARGO_PKG_VERSION"));
+        return Ok(());
+    }
     let image = image::open(&path)?.into_rgb8();
     let (width, height) = image.dimensions();
     let tensor = NdTensor::from_data([height as usize, width as usize, 3], image.into_raw());
