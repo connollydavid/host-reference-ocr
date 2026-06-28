@@ -1,6 +1,6 @@
 [package]
 name = "host-reference-ocr-helper"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 license = "Unlicense"
 description = "Out-of-process OCR helper for host-reference: an ocrs/rten engine carrying the CC-BY-SA-4.0 ocrs models behind the call/0033 arms-length boundary"
