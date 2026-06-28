@@ -1,0 +1,9 @@
+The two .rten model files in this directory are the ocrs models by Robert Knight:
+
+  https://github.com/robertknight/ocrs-models
+  https://huggingface.co/robertknight/ocrs
+
+Licence: CC-BY-SA-4.0 (Creative Commons Attribution-ShareAlike 4.0)
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+They are redistributed here unmodified, with attribution, under that licence.

@@ -1,0 +1,26 @@
+# cargo-deny licence lane for the OCR helper. The ocrs and rten code and their dependencies are
+# permissive. AGPL is banned and never added; GPL would be flagged here by name. The CC-BY-SA-4.0
+# model files are vendored data, not a cargo dependency, so this lane does not see them; their licence
+# is recorded in NOTICE.md.
+[licenses]
+version = 2
+confidence-threshold = 0.9
+allow = [
+    "Apache-2.0",
+    "BSD-2-Clause",
+    "BSD-3-Clause",
+    "CC0-1.0",
+    "MIT",
+    "MPL-2.0",
+    "Unicode-3.0",
+    "Unlicense",
+    "Zlib",
+]
+exceptions = []
+
+[advisories]
+version = 2
+ignore = []
+
+[bans]
+multiple-versions = "allow"
